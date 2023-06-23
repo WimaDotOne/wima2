@@ -1,0 +1,18 @@
+.coverDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.coverPhotoDiv {
+  width: 100%;
+  height: 35vw;
+  max-width: 1000px;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+  .coverPhotoDiv {
+    border-radius: 0 0 20px 20px;
+  }
+}
