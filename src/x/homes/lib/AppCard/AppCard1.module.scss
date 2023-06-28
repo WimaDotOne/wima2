@@ -1,0 +1,47 @@
+.card {
+  background-repeat: repeat;
+  background-size: 400px;
+  padding: 20px 30px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+}
+.textArea {
+  max-width: 400px;
+}
+.text1 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text3 {
+  color: #888;
+  font-size: 14px;
+}
+
+.imageArea {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.imageDiv {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+  .imageDiv {
+    width: 300px;
+    height: 300px;
+  }
+}

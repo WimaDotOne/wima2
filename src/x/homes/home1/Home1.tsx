@@ -1,18 +1,16 @@
 import { Wall } from "@/x/libs/lib2/basic/Wall/Wall";
-import CoverPhoto from "../lib/CoverPhoto/CoverPhoto";
-import ProfilePhoto from "../lib/ProfilePhoto/ProfilePhoto";
+import { AppCard1 } from "../lib/AppCard/AppCard1";
 
 export default function Home1() {
   return (<>
-    <CoverPhoto src="/home1/ariel.jpg"
-      alt="Cover photo. Ariel sitting at the bottom of sea looking up."
-      color="#5399d5"
-      top={-30}
-    />
     <Wall>
-      <ProfilePhoto src="/home1/fan.jpg"
-        alt="Profile picture of Fan"
-        text="College Math Tutoring"
+      <AppCard1 
+        text1="Math Tutoring"
+        text2="UW-Madison & Edgewood"
+        text3="Calculus and pre-calculus in person tutoring."
+        imageAlt="A picture of website creator"
+        imageSrc="/home1/fan3.png"
+        backgroundImageSrc="/home1/glitterBlue.webp"
       />
     </Wall>
   </>)
