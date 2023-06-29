@@ -1,30 +1,23 @@
 import Image from "next/image"
-import cl from "./AppCard1.module.scss"
+import cl from "./AppCard2.module.scss"
 
-interface IAppCard1Prop {
+interface IAppCard2Prop {
   text1: string
   text2: string
   text3: string
   imageSrc: string
   imageAlt: string
-  backgroundImageSrc: string
 }
 
-export function AppCard1({
+export default function AppCard2({
   text1,
   text2,
   text3,
   imageSrc,
-  imageAlt,
-  backgroundImageSrc
-}: IAppCard1Prop) {
-
-  const cardStyle = {
-    backgroundImage: `url(${backgroundImageSrc})`
-  }
-
+  imageAlt
+}: IAppCard2Prop) {
   return(<>
-  <div className={cl.card} style={cardStyle}>
+  <div className={cl.card}>
     <div className={cl.textArea}>
       <div className={cl.text1}>{text1}</div>
       <div className={cl.text2}>{text2}</div>

@@ -1,0 +1,12 @@
+.app2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 25px;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .app2 {
+    grid-template-columns: auto auto;
+  }
+}
